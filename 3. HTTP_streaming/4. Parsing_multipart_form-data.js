@@ -16,7 +16,6 @@
  const fileName = '../../powder-day.mp4';
  const fileInfo = promisify(stat);
  const multiparty = require('multiparty');
-const { on } = require('process');
  
  const respondWithVideo = async (req, res) => {
      const { size } = await fileInfo(fileName);
