@@ -1,0 +1,11 @@
+Streams are very important to Node.js and as an Node.js developer, you're going to want to know your way around the stream interface.
+To exemplify how streams work in Node.js, we're going to use an analogy. Consider a very large bucket of water. So you have a giant bucket of 
+water and let's say you have to move this giant bucket of water into another giant bucket. So, we'll refer to our bucket of water as the source 
+and the bucket that we need to move the water to as the destination. Now, if you wanted to build a business around moving water from the source 
+to the destination, you're going to need some space. So there we go. Your business has a factory and in that factory, you have an empty, 
+giant bucket with a B on it. That stands for buffer. So when it's times for you to actually move the water from the source to the destination,
+you can pull the water into your factory, pour all of it into your buffer bucket, and pull the destination bucket into the factory, 
+and pour all of the water in your buffer bucket into the destination. There's a solution. But there's got be a better way, and there is. 
+A hose. What if we were able to hook a hose up to the source bucket and pipe all of the water through the hose to the destination bucket?
+We will have created a stream, and water will move bit by bit from the source to the destination bucket. Now, in Node.js, we're not in the business 
+of moving water, we're in the business of moving data, but we have a similar problem to solve. Let's take a look at a couple examples.
